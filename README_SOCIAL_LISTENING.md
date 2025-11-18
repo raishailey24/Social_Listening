@@ -66,26 +66,39 @@ This Social Listening dashboard provides real-time insights into community conve
 
 ```
 Social_Listening/
+├── data/                               # Data directory (all CSV files included)
+│   ├── CLEAN_theme_dimension_ENHANCED.csv
+│   ├── CLEAN_social_listening_fact_table.csv
+│   ├── CLEAN_theme_weekly_trends_TOP20.csv
+│   ├── CLEAN_weekly_category_aggregation.csv
+│   ├── CLEAN_weekly_totals.csv
+│   ├── CLEAN_product_performance_ENHANCED.csv
+│   ├── CLEAN_specific_themes_only.csv
+│   └── THEME_DECODER_REFERENCE.csv
 ├── ebay_trend_intelligence_dashboard.py  # Main dashboard application
 ├── app.py                               # Alternative entry point
 ├── requirements.txt                     # Python dependencies
 ├── sample_data.csv                      # Sample dataset
-├── README.md                           # This file
+├── .gitignore                          # Git ignore file
+├── README.md                           # Original documentation
+├── README_SOCIAL_LISTENING.md          # Comprehensive documentation
 ├── README_EBAY_DASHBOARD.md            # Detailed dashboard documentation
 └── ENHANCEMENT_SUMMARY.md              # Feature enhancement history
 ```
 
 ## 📊 Data Requirements
 
-The dashboard expects the following CSV files in the specified directory:
-- `CLEAN_theme_dimension_ENHANCED.csv`
-- `CLEAN_social_listening_fact_table.csv`
-- `CLEAN_theme_weekly_trends_TOP20.csv`
-- `CLEAN_weekly_category_aggregation.csv`
-- `CLEAN_weekly_totals.csv`
-- `CLEAN_product_performance_ENHANCED.csv`
-- `CLEAN_specific_themes_only.csv`
-- `THEME_DECODER_REFERENCE.csv`
+The dashboard includes all required CSV files in the `./data/` directory:
+- ✅ `CLEAN_theme_dimension_ENHANCED.csv`
+- ✅ `CLEAN_social_listening_fact_table.csv`
+- ✅ `CLEAN_theme_weekly_trends_TOP20.csv`
+- ✅ `CLEAN_weekly_category_aggregation.csv`
+- ✅ `CLEAN_weekly_totals.csv`
+- ✅ `CLEAN_product_performance_ENHANCED.csv`
+- ✅ `CLEAN_specific_themes_only.csv`
+- ✅ `THEME_DECODER_REFERENCE.csv`
+
+**No additional setup required** - all data files are included in the repository!
 
 ## 🎨 Key Features
 
@@ -107,13 +120,9 @@ The dashboard expects the following CSV files in the specified directory:
 - ✅ Professional branding
 - ✅ Mobile-responsive design
 
-## 🔧 Configuration
+## 🔧 Ready to Use
 
-Update the `base_path` variable in the `load_data()` function to point to your data directory:
-
-```python
-base_path = "path/to/your/data/directory"
-```
+No configuration needed! The dashboard is pre-configured to use the included data files in the `./data/` directory. Simply clone and run!
 
 ## 📈 Usage
 

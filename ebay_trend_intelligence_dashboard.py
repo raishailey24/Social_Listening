@@ -153,7 +153,8 @@ def get_enhanced_theme_explanation(theme):
 # Load data function
 @st.cache_data
 def load_data():
-    base_path = "C:/Users/shail/OneDrive/Desktop/BizViz Challenge/eBay_Trend_Intelligence_Complete_Package"
+    # Use local data directory for portability
+    base_path = "./data"
     
     try:
         # Load V2 ENHANCED datasets
