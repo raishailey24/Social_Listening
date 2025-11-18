@@ -24,46 +24,50 @@ An advanced, interactive Streamlit dashboard for analyzing social media trends a
 
 ### 📈 **Weekly Impact Analysis**
 - Time-series tracking of theme evolution
-- Week-over-week velocity calculations
-- Sentiment momentum tracking
-- Interactive heatmaps of theme activity
 
-### 🎯 **Opportunity Recommendations**
-- Automated seller opportunity classification:
-  - **Trending – notify vetted sellers**: High growth + positive sentiment
-  - **Emerging – watchlist**: Early signals of growth
-  - **Declining – low priority**: Weakening trends
-- Business-ready insights and rationale
+### Category Performance
+- Performance analysis across different categories
+- Year-based filtering for trend analysis
+- Properly capitalized category displays
 
-### 🔧 **Advanced Filtering**
-- Filter by source platform (Reddit, TikTok, etc.)
-- Asset type filtering (posts, comments, videos)
-- Language and purchase stage filters
-- Date range selection
-- Real-time filter impact tracking
+### Theme Decoder
+- Enhanced theme explanations and meanings
+- Business-friendly interpretations
+- Seller action recommendations
 
-## Quick Start
+## Installation
 
-1. **Install dependencies:**
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/raishailey24/Social_Listening.git
+   cd Social_Listening
+   ```
+
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Place your data:**
-   - Put `sample_data.csv` in the project folder, OR
-   - Use the sidebar uploader for any CSV file
-
 3. **Run the dashboard:**
    ```bash
-   streamlit run app.py
+   streamlit run ebay_trend_intelligence_dashboard.py
    ```
 
-4. **Navigate through pages:**
-   - **Data Overview**: Explore your dataset schema
-   - **Theme Discovery**: Find trending topics
-   - **Theme Statistics**: Deep dive analysis
-   - **Weekly Impact**: Track evolution over time
-   - **Opportunity Recommendations**: Get seller insights
+4. **Access the dashboard:**
+   Open your browser and navigate to `http://localhost:8501`
+
+## Project Structure
+
+```bash
+Social_Listening/
+├── ebay_trend_intelligence_dashboard.py  # Main dashboard application
+├── app.py                               # Alternative entry point
+├── requirements.txt                     # Python dependencies
+├── sample_data.csv                      # Sample dataset
+├── README.md                           # This file
+├── README_EBAY_DASHBOARD.md            # Detailed dashboard documentation
+└── ENHANCEMENT_SUMMARY.md              # Feature enhancement history
+```
 
 ## Data Requirements
 
